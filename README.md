@@ -1,1 +1,1 @@
-# DaliyEarnEasypaisa.github.io
+DaliyEarnEasypaisa.github.io
