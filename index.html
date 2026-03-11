@@ -1,71 +1,74 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="ur">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .package {
-            background: #ddd;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .info {
-            display: none;
-            background: #eee;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 4px;
-        }
-        .whatsapp-button {
-            display: block;
-            text-align: center;
-            background-color: #25D366;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
-    <script>
-        function toggleInfo(id) {
-            var info = document.getElementById(id);
-            info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
-        }
-    </script>
+<meta charset="UTF-8">
+<title>Ramzan Package Reward</title>
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+padding:40px;
+}
+.box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:320px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+h2{
+color:#0a7d3b;
+}
+input,select{
+width:90%;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+button{
+background:#0a7d3b;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+#msg{
+margin-top:15px;
+color:green;
+font-weight:bold;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Package List</h1><div class="package" onclick="toggleInfo('info1')">Package 1 - Price: Rs.500</div>
-    <div id="info1" class="info">Package lagne k liye apko Package Ki Amount Send karna he...<br>Easypaisa: 03002483347<br>Name: ARSHAD<br>Uske baad Payment Send hojaye toh Screenshot aur Account Number naam lekh kay send karna he.</div>
-    
-    <div class="package" onclick="toggleInfo('info2')">Package 2 - Price: Rs.1000</div>
-    <div id="info2" class="info">Package lagne k liye apko Package Ki Amount Send karna he...<br>Easypaisa: 03002483347<br>Name: ARSHAD<br>Uske baad Payment Send hojaye toh Screenshot aur Account Number naam lekh kay send karna he.</div>
-    
-    <div class="package" onclick="toggleInfo('info3')">Package 3 - Price: Rs.2000</div>
-    <div id="info3" class="info">Package lagne k liye apko Package Ki Amount Send karna he...<br>Easypaisa: 03002483347<br>Name: ARSHAD<br>Uske baad Payment Send hojaye toh Screenshot aur Account Number naam lekh kay send karna he.</div>
-    
-    <a class="whatsapp-button" href="https://wa.me/923123463402" target="_blank">WhatsApp Par Rabta Karen</a>
+
+<div class="box">
+<h2>Ramzan Package Reward</h2>
+
+<input type="text" placeholder="Apna Mobile Number Enter Karein">
+
+<select>
+<option>Select Payment Method</option>
+<option>Easypaisa</option>
+<option>JazzCash</option>
+</select>
+
+<br>
+<button onclick="apply()">Submit</button>
+
+<p id="msg"></p>
 </div>
+
+<script>
+function apply(){
+document.getElementById("msg").innerHTML =
+"Apka Apply hogya hai. Apko 24 hours me 16500 Rs Receive ho jayega. Shukariya!";
+}
+</script>
 
 </body>
 </html>
